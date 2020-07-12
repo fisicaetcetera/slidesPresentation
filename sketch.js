@@ -1,6 +1,6 @@
 let figura;
 let fig = [];
-let n = 1;
+let n = 0;
 
 var speech;
 let palavra = " Exibição de três figuras";
@@ -10,6 +10,7 @@ console.log('ml5 version: ', ml5.version)
 let soundClassifier;
 
 function preload() {
+  fig[0] = loadImage('');
   fig[1] = loadImage('seventhSealChess.jpeg');
   fig[2] = loadImage('turkishAngoraCat.jpeg');
   fig[3] = loadImage('pink-e-cerebro.jpg');
@@ -58,6 +59,12 @@ function gotResults(error, results) {
     palavra1 = 'Mostrando figura três';
     console.log(palavra);
     n=3;
+    
+    } else if (palavra == 'stop') {
+    //figura = fig1;
+    palavra1 = 'Mostrando figura inicial';
+    console.log(palavra);
+    n=0;
   } else { palavra1 = ('Eu não tenho essa figura, ainda.'); 
   }
 
