@@ -10,7 +10,7 @@ console.log('ml5 version: ', ml5.version)
 let soundClassifier;
 
 function preload() {
-  fig[0] = loadImage('');
+  fig[0] = loadImage('oi.png');
   fig[1] = loadImage('seventhSealChess.jpeg');
   fig[2] = loadImage('turkishAngoraCat.jpeg');
   fig[3] = loadImage('pink-e-cerebro.jpg');
