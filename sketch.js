@@ -22,7 +22,7 @@ function preload() {
 
 function setup() {
 
-  createCanvas(400, 400);
+  createCanvas(200, 200);
   let botao = createButton('clique aqui');
   createP('Diga, em Inglês, números de um a três.');
 
@@ -80,6 +80,6 @@ function voiceReady() {
 }
 
 function draw() {
-  background(111);
-  image(fig[n], 0, 0)
+  background(fig[n]);
+//  image(fig[n], 0, 0)
 }
